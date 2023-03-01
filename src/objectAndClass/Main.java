@@ -1,7 +1,7 @@
-package lesson11;
+package objectAndClass;
 
 public class Main {
-    private static lesson11.Author Author;
+    private static objectAndClass.Author Author;
 
     public static void main(String[] args) {
         Author fullName = new Author("Lev ", "Tolstoy");

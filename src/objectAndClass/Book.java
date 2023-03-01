@@ -1,4 +1,4 @@
-package lesson11;
+package objectAndClass;
 
 public class Book {
 
