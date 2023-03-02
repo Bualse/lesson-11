@@ -8,17 +8,17 @@ public class Main {
 
             Author fullName1 = new Author("Michail ", "Bulgakov");
 
-            Book warAndPeace = new Book(Author, "War and Peace", 1_873);
-            System.out.println("Автор: " + fullName.getNameAuthor() + fullName.getSecondNameAuthor() + ", книга: " + warAndPeace.getNameBook() + ", год: " + warAndPeace.getYearPublish());
+            Book warAndPeace = new Book(fullName, "War and Peace", 1_873);
+            System.out.println("Автор: " + warAndPeace.getAuthor().getNameAuthor() + warAndPeace.getAuthor().getSecondNameAuthor() + ", книга: " + warAndPeace.getNameBook() + ", год: " + warAndPeace.getYearPublish());
 
-            Book masterAndMargarita = new Book(Author, " Master and Margarita", 1_937);
+            Book masterAndMargarita = new Book(fullName1, " Master and Margarita", 1_937);
             System.out.println("Автор: " + fullName1.getNameAuthor() + fullName1.getSecondNameAuthor() + ", книга: " + masterAndMargarita.getNameBook() + ", год: " + masterAndMargarita.getYearPublish());
 
             masterAndMargarita.setYearPublish(1_960);
             System.out.println("Изменился год: " + masterAndMargarita.getYearPublish());
 
 
-            System.out.println(new Book(Author, "Война и Мир", 1873));
+            System.out.println(new Book(fullName, "Война и Мир", 1873));
             System.out.println(masterAndMargarita);
 
 
